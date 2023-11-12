@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372DDF7B2B00ED2500FEC867 /* watchDDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDF7A2B00ED2500FEC867 /* watchDDayApp.swift */; };
+		372DDF7D2B00ED2500FEC867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDF7C2B00ED2500FEC867 /* ContentView.swift */; };
+		372DDF7F2B00ED2600FEC867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372DDF7E2B00ED2600FEC867 /* Assets.xcassets */; };
+		372DDF822B00ED2600FEC867 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372DDF812B00ED2600FEC867 /* Preview Assets.xcassets */; };
+		372DDF8C2B00ED2700FEC867 /* watchDDay_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDF8B2B00ED2700FEC867 /* watchDDay_Watch_AppTests.swift */; };
+		372DDF962B00ED2700FEC867 /* watchDDay_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDF952B00ED2700FEC867 /* watchDDay_Watch_AppUITests.swift */; };
+		372DDF982B00ED2700FEC867 /* watchDDay_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDF972B00ED2700FEC867 /* watchDDay_Watch_AppUITestsLaunchTests.swift */; };
+		372DDF9B2B00ED2700FEC867 /* watchDDay Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 372DDF782B00ED2500FEC867 /* watchDDay Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		372DDFCC2B0128F700FEC867 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC72B0128F700FEC867 /* Data.swift */; };
+		372DDFCD2B0128F700FEC867 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC72B0128F700FEC867 /* Data.swift */; };
+		372DDFCE2B0128F700FEC867 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC82B0128F700FEC867 /* Notifications.swift */; };
+		372DDFCF2B0128F700FEC867 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC82B0128F700FEC867 /* Notifications.swift */; };
+		372DDFD02B0128F700FEC867 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC92B0128F700FEC867 /* Model.swift */; };
+		372DDFD12B0128F700FEC867 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFC92B0128F700FEC867 /* Model.swift */; };
+		372DDFD22B0128F700FEC867 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFCA2B0128F700FEC867 /* Model.xcdatamodeld */; };
+		372DDFD32B0128F700FEC867 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 372DDFCA2B0128F700FEC867 /* Model.xcdatamodeld */; };
 		373E34FD2AF9E4A9008DE736 /* DDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E34FC2AF9E4A9008DE736 /* DDayApp.swift */; };
 		373E34FF2AF9E4A9008DE736 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E34FE2AF9E4A9008DE736 /* ContentView.swift */; };
 		373E35012AF9E4A9008DE736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E35002AF9E4A9008DE736 /* Item.swift */; };
@@ -20,9 +36,33 @@
 		373E35302AF9E4EE008DE736 /* HomeCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E352B2AF9E4EE008DE736 /* HomeCalendarView.swift */; };
 		373E35312AF9E4EE008DE736 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E352C2AF9E4EE008DE736 /* HomePageView.swift */; };
 		373E35322AF9E4EE008DE736 /* HealthPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E352D2AF9E4EE008DE736 /* HealthPageView.swift */; };
+		373E35362AFA16C1008DE736 /* AboutPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E35352AFA16C1008DE736 /* AboutPageView.swift */; };
+		373E35382AFA1895008DE736 /* MyProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E35372AFA1895008DE736 /* MyProfilePageView.swift */; };
+		37D06C202AFD3AC200615FF8 /* HealthHistoriesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D06C1F2AFD3AC200615FF8 /* HealthHistoriesPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		372DDF882B00ED2700FEC867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 373E34F12AF9E4A9008DE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372DDF772B00ED2500FEC867;
+			remoteInfo = "watchDDay Watch App";
+		};
+		372DDF922B00ED2700FEC867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 373E34F12AF9E4A9008DE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372DDF772B00ED2500FEC867;
+			remoteInfo = "watchDDay Watch App";
+		};
+		372DDF992B00ED2700FEC867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 373E34F12AF9E4A9008DE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372DDF772B00ED2500FEC867;
+			remoteInfo = "watchDDay Watch App";
+		};
 		373E350C2AF9E4AA008DE736 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 373E34F12AF9E4A9008DE736 /* Project object */;
@@ -39,7 +79,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		372DDF9C2B00ED2700FEC867 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				372DDF9B2B00ED2700FEC867 /* watchDDay Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		372DDF782B00ED2500FEC867 /* watchDDay Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchDDay Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372DDF7A2B00ED2500FEC867 /* watchDDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDDayApp.swift; sourceTree = "<group>"; };
+		372DDF7C2B00ED2500FEC867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		372DDF7E2B00ED2600FEC867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		372DDF812B00ED2600FEC867 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		372DDF872B00ED2700FEC867 /* watchDDay Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchDDay Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372DDF8B2B00ED2700FEC867 /* watchDDay_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDDay_Watch_AppTests.swift; sourceTree = "<group>"; };
+		372DDF912B00ED2700FEC867 /* watchDDay Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchDDay Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372DDF952B00ED2700FEC867 /* watchDDay_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDDay_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		372DDF972B00ED2700FEC867 /* watchDDay_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDDay_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		372DDFC72B0128F700FEC867 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		372DDFC82B0128F700FEC867 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		372DDFC92B0128F700FEC867 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		372DDFCB2B0128F700FEC867 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		373E34F92AF9E4A9008DE736 /* DDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373E34FC2AF9E4A9008DE736 /* DDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayApp.swift; sourceTree = "<group>"; };
 		373E34FE2AF9E4A9008DE736 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,9 +124,34 @@
 		373E352B2AF9E4EE008DE736 /* HomeCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCalendarView.swift; sourceTree = "<group>"; };
 		373E352C2AF9E4EE008DE736 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		373E352D2AF9E4EE008DE736 /* HealthPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthPageView.swift; sourceTree = "<group>"; };
+		373E35352AFA16C1008DE736 /* AboutPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageView.swift; sourceTree = "<group>"; };
+		373E35372AFA1895008DE736 /* MyProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePageView.swift; sourceTree = "<group>"; };
+		37D06C1F2AFD3AC200615FF8 /* HealthHistoriesPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthHistoriesPageView.swift; sourceTree = "<group>"; };
+		37D06C232AFD5C8D00615FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		372DDF752B00ED2500FEC867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF842B00ED2700FEC867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF8E2B00ED2700FEC867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		373E34F62AF9E4A9008DE736 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,12 +176,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372DDF792B00ED2500FEC867 /* watchDDay Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				372DDFB32B01206A00FEC867 /* Diet */,
+				372DDF7A2B00ED2500FEC867 /* watchDDayApp.swift */,
+				372DDF7C2B00ED2500FEC867 /* ContentView.swift */,
+				372DDF7E2B00ED2600FEC867 /* Assets.xcassets */,
+				372DDF802B00ED2600FEC867 /* Preview Content */,
+			);
+			path = "watchDDay Watch App";
+			sourceTree = "<group>";
+		};
+		372DDF802B00ED2600FEC867 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				372DDF812B00ED2600FEC867 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		372DDF8A2B00ED2700FEC867 /* watchDDay Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				372DDF8B2B00ED2700FEC867 /* watchDDay_Watch_AppTests.swift */,
+			);
+			path = "watchDDay Watch AppTests";
+			sourceTree = "<group>";
+		};
+		372DDF942B00ED2700FEC867 /* watchDDay Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				372DDF952B00ED2700FEC867 /* watchDDay_Watch_AppUITests.swift */,
+				372DDF972B00ED2700FEC867 /* watchDDay_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "watchDDay Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		372DDFB32B01206A00FEC867 /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		372DDFC52B0128F700FEC867 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				372DDFC62B0128F700FEC867 /* Tools */,
+				372DDFC92B0128F700FEC867 /* Model.swift */,
+				372DDFCA2B0128F700FEC867 /* Model.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		372DDFC62B0128F700FEC867 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				372DDFC72B0128F700FEC867 /* Data.swift */,
+				372DDFC82B0128F700FEC867 /* Notifications.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		373E34F02AF9E4A9008DE736 = {
 			isa = PBXGroup;
 			children = (
+				372DDFC52B0128F700FEC867 /* Shared */,
 				373E34FB2AF9E4A9008DE736 /* DDay */,
 				373E350E2AF9E4AA008DE736 /* DDayTests */,
 				373E35182AF9E4AA008DE736 /* DDayUITests */,
+				372DDF792B00ED2500FEC867 /* watchDDay Watch App */,
+				372DDF8A2B00ED2700FEC867 /* watchDDay Watch AppTests */,
+				372DDF942B00ED2700FEC867 /* watchDDay Watch AppUITests */,
 				373E34FA2AF9E4A9008DE736 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +259,9 @@
 				373E34F92AF9E4A9008DE736 /* DDay.app */,
 				373E350B2AF9E4AA008DE736 /* DDayTests.xctest */,
 				373E35152AF9E4AA008DE736 /* DDayUITests.xctest */,
+				372DDF782B00ED2500FEC867 /* watchDDay Watch App.app */,
+				372DDF872B00ED2700FEC867 /* watchDDay Watch AppTests.xctest */,
+				372DDF912B00ED2700FEC867 /* watchDDay Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +269,7 @@
 		373E34FB2AF9E4A9008DE736 /* DDay */ = {
 			isa = PBXGroup;
 			children = (
+				37D06C232AFD5C8D00615FF8 /* Info.plist */,
 				373E35342AF9E5B5008DE736 /* Health */,
 				373E35332AF9E59E008DE736 /* My */,
 				373E35292AF9E4EE008DE736 /* Home */,
@@ -157,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				373E35282AF9E4EE008DE736 /* MyPageView.swift */,
+				373E35352AFA16C1008DE736 /* AboutPageView.swift */,
+				373E35372AFA1895008DE736 /* MyProfilePageView.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -165,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				373E352D2AF9E4EE008DE736 /* HealthPageView.swift */,
+				37D06C1F2AFD3AC200615FF8 /* HealthHistoriesPageView.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -172,6 +339,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		372DDF772B00ED2500FEC867 /* watchDDay Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372DDFA32B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch App" */;
+			buildPhases = (
+				372DDF742B00ED2500FEC867 /* Sources */,
+				372DDF752B00ED2500FEC867 /* Frameworks */,
+				372DDF762B00ED2500FEC867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchDDay Watch App";
+			productName = "watchDDay Watch App";
+			productReference = 372DDF782B00ED2500FEC867 /* watchDDay Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		372DDF862B00ED2700FEC867 /* watchDDay Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372DDFA42B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch AppTests" */;
+			buildPhases = (
+				372DDF832B00ED2700FEC867 /* Sources */,
+				372DDF842B00ED2700FEC867 /* Frameworks */,
+				372DDF852B00ED2700FEC867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372DDF892B00ED2700FEC867 /* PBXTargetDependency */,
+			);
+			name = "watchDDay Watch AppTests";
+			productName = "watchDDay Watch AppTests";
+			productReference = 372DDF872B00ED2700FEC867 /* watchDDay Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		372DDF902B00ED2700FEC867 /* watchDDay Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372DDFA52B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch AppUITests" */;
+			buildPhases = (
+				372DDF8D2B00ED2700FEC867 /* Sources */,
+				372DDF8E2B00ED2700FEC867 /* Frameworks */,
+				372DDF8F2B00ED2700FEC867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372DDF932B00ED2700FEC867 /* PBXTargetDependency */,
+			);
+			name = "watchDDay Watch AppUITests";
+			productName = "watchDDay Watch AppUITests";
+			productReference = 372DDF912B00ED2700FEC867 /* watchDDay Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		373E34F82AF9E4A9008DE736 /* DDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 373E351F2AF9E4AA008DE736 /* Build configuration list for PBXNativeTarget "DDay" */;
@@ -179,10 +399,12 @@
 				373E34F52AF9E4A9008DE736 /* Sources */,
 				373E34F62AF9E4A9008DE736 /* Frameworks */,
 				373E34F72AF9E4A9008DE736 /* Resources */,
+				372DDF9C2B00ED2700FEC867 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				372DDF9A2B00ED2700FEC867 /* PBXTargetDependency */,
 			);
 			name = DDay;
 			productName = DDay;
@@ -235,6 +457,17 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					372DDF772B00ED2500FEC867 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					372DDF862B00ED2700FEC867 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 372DDF772B00ED2500FEC867;
+					};
+					372DDF902B00ED2700FEC867 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 372DDF772B00ED2500FEC867;
+					};
 					373E34F82AF9E4A9008DE736 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -264,11 +497,37 @@
 				373E34F82AF9E4A9008DE736 /* DDay */,
 				373E350A2AF9E4AA008DE736 /* DDayTests */,
 				373E35142AF9E4AA008DE736 /* DDayUITests */,
+				372DDF772B00ED2500FEC867 /* watchDDay Watch App */,
+				372DDF862B00ED2700FEC867 /* watchDDay Watch AppTests */,
+				372DDF902B00ED2700FEC867 /* watchDDay Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		372DDF762B00ED2500FEC867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372DDF822B00ED2600FEC867 /* Preview Assets.xcassets in Resources */,
+				372DDF7F2B00ED2600FEC867 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF852B00ED2700FEC867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF8F2B00ED2700FEC867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		373E34F72AF9E4A9008DE736 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,18 +554,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		372DDF742B00ED2500FEC867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372DDFD12B0128F700FEC867 /* Model.swift in Sources */,
+				372DDFCF2B0128F700FEC867 /* Notifications.swift in Sources */,
+				372DDF7D2B00ED2500FEC867 /* ContentView.swift in Sources */,
+				372DDFCD2B0128F700FEC867 /* Data.swift in Sources */,
+				372DDF7B2B00ED2500FEC867 /* watchDDayApp.swift in Sources */,
+				372DDFD32B0128F700FEC867 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF832B00ED2700FEC867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372DDF8C2B00ED2700FEC867 /* watchDDay_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372DDF8D2B00ED2700FEC867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372DDF982B00ED2700FEC867 /* watchDDay_Watch_AppUITestsLaunchTests.swift in Sources */,
+				372DDF962B00ED2700FEC867 /* watchDDay_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		373E34F52AF9E4A9008DE736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373E35382AFA1895008DE736 /* MyProfilePageView.swift in Sources */,
 				373E34FF2AF9E4A9008DE736 /* ContentView.swift in Sources */,
+				372DDFD22B0128F700FEC867 /* Model.xcdatamodeld in Sources */,
 				373E352E2AF9E4EE008DE736 /* MyPageView.swift in Sources */,
+				373E35362AFA16C1008DE736 /* AboutPageView.swift in Sources */,
 				373E35012AF9E4A9008DE736 /* Item.swift in Sources */,
+				372DDFCE2B0128F700FEC867 /* Notifications.swift in Sources */,
 				373E352F2AF9E4EE008DE736 /* HomeDiaryEditorView.swift in Sources */,
+				372DDFD02B0128F700FEC867 /* Model.swift in Sources */,
 				373E34FD2AF9E4A9008DE736 /* DDayApp.swift in Sources */,
+				372DDFCC2B0128F700FEC867 /* Data.swift in Sources */,
 				373E35322AF9E4EE008DE736 /* HealthPageView.swift in Sources */,
 				373E35312AF9E4EE008DE736 /* HomePageView.swift in Sources */,
 				373E35302AF9E4EE008DE736 /* HomeCalendarView.swift in Sources */,
+				37D06C202AFD3AC200615FF8 /* HealthHistoriesPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +626,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		372DDF892B00ED2700FEC867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372DDF772B00ED2500FEC867 /* watchDDay Watch App */;
+			targetProxy = 372DDF882B00ED2700FEC867 /* PBXContainerItemProxy */;
+		};
+		372DDF932B00ED2700FEC867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372DDF772B00ED2500FEC867 /* watchDDay Watch App */;
+			targetProxy = 372DDF922B00ED2700FEC867 /* PBXContainerItemProxy */;
+		};
+		372DDF9A2B00ED2700FEC867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372DDF772B00ED2500FEC867 /* watchDDay Watch App */;
+			targetProxy = 372DDF992B00ED2700FEC867 /* PBXContainerItemProxy */;
+		};
 		373E350D2AF9E4AA008DE736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 373E34F82AF9E4A9008DE736 /* DDay */;
@@ -343,6 +654,148 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		372DDF9D2B00ED2700FEC867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchDDay Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchDDay;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = me.fennland.DDay;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fennland.DDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		372DDF9E2B00ED2700FEC867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchDDay Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchDDay;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = me.fennland.DDay;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fennland.DDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		372DDF9F2B00ED2700FEC867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.fennland.watchDDay-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchDDay Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watchDDay Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		372DDFA02B00ED2700FEC867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.fennland.watchDDay-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchDDay Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watchDDay Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		372DDFA12B00ED2700FEC867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.fennland.watchDDay-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchDDay Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		372DDFA22B00ED2700FEC867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL9GFXKNZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.fennland.watchDDay-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchDDay Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		373E351D2AF9E4AA008DE736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +918,7 @@
 		373E35202AF9E4AA008DE736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,9 +927,9 @@
 				DEVELOPMENT_TEAM = BL9GFXKNZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DDay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DDay;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -497,6 +951,7 @@
 		373E35212AF9E4AA008DE736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,9 +960,9 @@
 				DEVELOPMENT_TEAM = BL9GFXKNZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DDay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DDay;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -605,6 +1060,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		372DDFA32B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372DDF9D2B00ED2700FEC867 /* Debug */,
+				372DDF9E2B00ED2700FEC867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372DDFA42B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372DDF9F2B00ED2700FEC867 /* Debug */,
+				372DDFA02B00ED2700FEC867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372DDFA52B00ED2700FEC867 /* Build configuration list for PBXNativeTarget "watchDDay Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372DDFA12B00ED2700FEC867 /* Debug */,
+				372DDFA22B00ED2700FEC867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		373E34F42AF9E4A9008DE736 /* Build configuration list for PBXProject "DDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -642,6 +1124,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		372DDFCA2B0128F700FEC867 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				372DDFCB2B0128F700FEC867 /* Model.xcdatamodel */,
+			);
+			currentVersion = 372DDFCB2B0128F700FEC867 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 373E34F12AF9E4A9008DE736 /* Project object */;
 }

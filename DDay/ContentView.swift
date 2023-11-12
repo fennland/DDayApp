@@ -9,87 +9,60 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-//    @Environment(\.modelContext) private var modelContext
-//    @Query private var items: [Item]
-//
-//    var body: some View {
-//        NavigationSplitView {
-//            List {
-//                ForEach(items) { item in
-//                    NavigationLink {
-//                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-//                    } label: {
-//                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-//                    }
-//                }
-//                .onDelete(perform: deleteItems)
-//            }
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    EditButton()
-//                }
-//                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-//                }
-//            }
-//        } detail: {
-//            Text("Select an item")
-//        }
-//    }
-//
-//    private func addItem() {
-//        withAnimation {
-//            let newItem = Item(timestamp: Date())
-//            modelContext.insert(newItem)
-//        }
-//    }
-//
-//    private func deleteItems(offsets: IndexSet) {
-//        withAnimation {
-//            for index in offsets {
-//                modelContext.delete(items[index])
-//            }
-//        }
-//    }
-    @State private var index = 0    // 默认选中索引
+    @State private var index = UserDefaults.standard.integer(forKey: "selectedTabIndex")    // 从 UserDefaults 中恢复 tab 索引
     @State private var accColor : Color = .purple    // 默认主题色
+    @AppStorage("dietAmount") private var dietAmount : Int = 0
+    @AppStorage("drinkAmount") private var drinkAmount : Int = 0
+    
     var body: some View {
-        TabView (selection: $index){
+        TabView(selection: $index){
             HomePageView()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("DDay")
                 }
                 .tint(.purple)
+                .tag(0)    // 添加 tag
             HealthPageView()
                 .tabItem {
                     Image(systemName: "heart.text.square.fill")
                     Text("健康")
                 }
                 .tint(.pink)
+                .tag(1)    // 添加 tag
             MyPageView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("我")
                 }
-        }.tint(accColor)
-            .onChange(of: index){ newValue in
-                getSelectedPageViewColor()
-            }  // TODO: 点击不同的tabItem变色
+                .tag(2)    // 添加 tag
+        }
+        .onChange(of: index) {
+            UserDefaults.standard.set(index, forKey: "selectedTabIndex")    // 保存 tab 索引到 UserDefaults
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            // 应用进入前台时的处理，你也可以在这里进行一些操作
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification)) { _ in
+            // 应用进入后台时的处理，你也可以在这里保存当前的 tab 索引
+            UserDefaults.standard.set(index, forKey: "selectedTabIndex")    // 保存当前 tab 索引到 UserDefaults
+        }
     }
     
-    private func getSelectedPageViewColor() {
+    private func getSelectedPageViewColor() -> Color {
         switch index {
         case 0:
-            accColor = .purple
+            print(index)
+            return Color.purple
         case 1:
-            accColor = .pink
+            print(index)
+            return Color.pink
         case 2:
-            accColor = .blue
+            print(index)
+            return Color.blue
         default:
-            accColor = .blue
+            print(index)
+            return Color.blue
         }
     }
 }
