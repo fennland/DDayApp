@@ -13,6 +13,7 @@ struct HomeDiaryEditorView: View {
     @State var date: String = "1970.01.01"
     @State var isEditing = false
     @State var content: String = ""
+    @Binding var noteItems: [NoteItem]
     var body: some View {
         VStack{
             Spacer()
@@ -72,5 +73,5 @@ struct HomeDiaryEditorView: View {
 
 
 #Preview {
-    HomeDiaryEditorView()
+    HomeDiaryEditorView(noteItems: .constant([]))
 }

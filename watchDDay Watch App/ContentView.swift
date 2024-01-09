@@ -126,8 +126,9 @@ struct ContentView: View {
 //                    EmptyView()
 //                }.hidden()
                 NavigationLink(destination: WatchOSDietAddView){
-                    if dietAmount < Int(getRecommendedDietAmount(weight: weight, height: height, userGender: userGender, userAge: userAge, currentWeightUnit: currentWeightUnit)) {
+                    if dietAmount < Int(getRecommendedDietAmount(weight: weight, height: height, userGender: userGender, userAge: userAge, currentWeightUnit: currentWeightUnit, caloriesBurning: 1.2)) {
                         Image(systemName: "flame")
+                        // TODO: caloriesBurning
                     }
                     else {
                         Image(systemName: "flame.fill")
@@ -136,7 +137,7 @@ struct ContentView: View {
                 .clipShape(Circle())
                     .padding()
                     
-                Text("\(dietAmount) kCal / \(Int(getRecommendedDietAmount(weight: weight, height: height, userGender: userGender, userAge: userAge, currentWeightUnit: currentWeightUnit))) kCal")
+                Text("\(dietAmount) kCal / \(Int(getRecommendedDietAmount(weight: weight, height: height, userGender: userGender, userAge: userAge, currentWeightUnit: currentWeightUnit, caloriesBurning: 1.2))) kCal")
                     .font(.title3)
             }.navigationTitle("进食")
                 .navigationBarTitleDisplayMode(.inline)

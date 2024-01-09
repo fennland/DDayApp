@@ -45,7 +45,7 @@ func getRecommendedDrinkAmount(weight: Double, currentWeightUnit: String) -> Int
     }
 }
 
-func getRecommendedDietAmount(weight: Double, height: Double, userGender: Int, userAge: Int, currentWeightUnit: String) -> Double {
+func getRecommendedDietAmount(weight: Double, height: Double, userGender: Int, userAge: Int, currentWeightUnit: String, caloriesBurning: Double) -> Double {
     var result: Double
     
     if currentWeightUnit == "kg"{
@@ -55,24 +55,21 @@ func getRecommendedDietAmount(weight: Double, height: Double, userGender: Int, u
             let sum2 = 9.6 * weight
             let sum3 = 1.8*Double(height)*100
             let sum4 = 4.7*Double(userAge)
-            let times = 1.15
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         case 1:
             let sum1 = Double(66)
             let sum2 = 13.7*weight
             let sum3 = 5*height*100
             let sum4 = 6.8*Double(userAge)
-            let times = 1.15
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         default:
             let sum1 = Double(66)
             let sum2 = 13.7*weight
             let sum3 = 5*height*100
             let sum4 = 6.8*Double(userAge)
-            let times = 1.0
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         }
     } else {
@@ -82,24 +79,21 @@ func getRecommendedDietAmount(weight: Double, height: Double, userGender: Int, u
             let sum2 = 9.6 * weight / 2
             let sum3 = 1.8*Double(height)*100
             let sum4 = 4.7*Double(userAge)
-            let times = 1.15
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         case 1:
             let sum1 = Double(66)
             let sum2 = 13.7*weight / 2
             let sum3 = 5*height*100
             let sum4 = 6.8*Double(userAge)
-            let times = 1.15
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         default:
             let sum1 = Double(66)
             let sum2 = 13.7*weight / 2
             let sum3 = 5*height*100
             let sum4 = 6.8*Double(userAge)
-            let times = 1.0
-            result = (sum1 + sum2 + sum3 - sum4) * times
+            result = (sum1 + sum2 + sum3 - sum4) * caloriesBurning
             break
         }
     }

@@ -23,19 +23,26 @@ struct ContentView: View {
                 }
                 .tint(.purple)
                 .tag(0)    // 添加 tag
+            BotPageView()
+                .tabItem {
+                    Image(systemName: "text.bubble")
+                    Text("聊天")
+                }
+                .tint(.yellow)
+                .tag(1)    // 添加 tag
             HealthPageView()
                 .tabItem {
                     Image(systemName: "heart.text.square.fill")
                     Text("健康")
                 }
                 .tint(.pink)
-                .tag(1)    // 添加 tag
+                .tag(2)    // 添加 tag
             MyPageView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("我")
                 }
-                .tag(2)    // 添加 tag
+                .tag(3)    // 添加 tag
         }
         .onChange(of: index) {
             UserDefaults.standard.set(index, forKey: "selectedTabIndex")    // 保存 tab 索引到 UserDefaults
@@ -56,10 +63,10 @@ struct ContentView: View {
             return Color.purple
         case 1:
             print(index)
-            return Color.pink
+            return Color.yellow
         case 2:
             print(index)
-            return Color.blue
+            return Color.pink
         default:
             print(index)
             return Color.blue

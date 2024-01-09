@@ -15,7 +15,7 @@ struct HomePageView : View {
         NavigationSplitView {
             List{
                 Section(header: Text("手记")) {
-                    NavigationLink(destination: HomeDiaryEditorView()) {  // TODO: 手记
+                    NavigationLink(destination: HomeDiaryEditorView(noteItems: $noteItems)) {  // TODO: 手记
                         Text("新的手记...")
                             .foregroundStyle(.purple)
                     }
@@ -86,7 +86,7 @@ struct NoteListRow: View {
     @ObservedObject var noteItem: NoteItem
     
     var body: some View {
-        NavigationLink(destination: HomeDiaryEditorView(title: "示例手记 #1")){
+        NavigationLink(destination: Text("TODO")){  // HomeDiaryEditorView(title: "示例手记 #1")
             HStack {
                 Text(noteItem.title)
                     .font(.system(size: 17))

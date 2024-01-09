@@ -11,6 +11,7 @@ import UserNotifications
 
 
 struct HealthPageView : View {
+    var caloriesBurningOptions = ["从来不动", "静态久坐，较少运动", "站站走走，经常运动", "运动员"]
     @AppStorage("MyProfileFromWhich") var MyProfileFromWhich : Int = 0
     
     // MARK: transfer to model
@@ -24,19 +25,27 @@ struct HealthPageView : View {
     @State private var HintDrinkEnough : String = ""
     
     @AppStorage("dietAmount") private var dietAmount : Int = 0
+    @AppStorage("addCalories") private var addCalories : Double = 0.0
     @State private var isExpandedDiet = false
+    @State private var isExpandedAddDiet = false
     
     @AppStorage("userWeight") private var weight: Double = 50.0
     @AppStorage("userHeight") private var height: Double = 1.7
+    @AppStorage("userAge") private var userAge : Int = 20
+    @AppStorage("userGender") private var userGender : Int = 0
+    @AppStorage("caloriesBurning") private var caloriesBurning : Double = 1.2
+    @AppStorage("caloriesBurningChoice") private var caloriesBurningChoice : Int = 0
     @State private var isEditingWeight = false
     @AppStorage("useKilogram") private var useKilogram = true
     @AppStorage("currentWeightUnit") private var currentWeightUnit: String = "kg"
+    
     @AppStorage("bmiIndex") private var bmi : Double = 0.0
     @State private var isBMIToggle : Bool = false
     @AppStorage("isNotify") private var isNotify: Bool = false
     @State private var showNotificationTimeSettings : Bool = false
     @State private var whenToPushDrink = Date()
     @State private var whenToPushDiet = Date()
+    @State private var showDietAddView : Bool = false
     var body: some View{
         NavigationView {
             List {
@@ -125,7 +134,22 @@ struct HealthPageView : View {
             HStack{
                 Text("摄入卡路里")
                 Spacer()
-                Text("\(dietAmount)" + " kCal")
+                Text("\(dietAmount) kCal / \(Int(getRecommendedDietAmount(weight: weight, height:height, userGender:userGender, userAge: userAge, currentWeightUnit: currentWeightUnit, caloriesBurning: caloriesBurning))) kCal")
+            }
+            DisclosureGroup("记录进食", isExpanded: $isExpandedAddDiet) {
+                HStack{
+                    Text("热量")
+                    Spacer()
+                    TextField("0.0 kCal", value: $addCalories, format: .number)
+                        .onSubmit {
+                            dietAmount += Int(addCalories)
+                            addCalories = 0.0
+                        }
+                        .textFieldStyle(.roundedBorder)
+                        .multilineTextAlignment(.trailing)
+                        .frame(maxWidth: 80.0)
+                    Text("kCal")
+                }
             }
             HStack{
                 Text("BMI")
@@ -158,12 +182,34 @@ struct HealthPageView : View {
                     .frame(maxWidth: .infinity, alignment: .trailing)
                 }
             }
-            NavigationLink(destination: Text("TODO")) {
-                Text("记一笔热量")
-            }
+            
             DisclosureGroup("进食设置", isExpanded: $isExpandedDiet) {
                 NavigationLink(destination: HealthHistoriesPageView(showType: .constant(2))) {
                     Text("进食历史")
+                }
+                Picker("基础代谢系数", selection: $caloriesBurningChoice) {
+                    ForEach(0..<caloriesBurningOptions.count, id: \.self) {
+                        Text(self.caloriesBurningOptions[$0])
+                    }
+                }
+                .onChange(of: caloriesBurningChoice) {
+                    switch (caloriesBurningChoice){
+                    case 0:
+                        caloriesBurning = 1.2
+                        break
+                    case 1:
+                        caloriesBurning = 1.4
+                        break
+                    case 2:
+                        caloriesBurning = 1.7
+                        break
+                    case 3:
+                        caloriesBurning = 2.0
+                        break
+                    default:
+                        caloriesBurning = 1.2
+                        break
+                    }
                 }
                 Toggle(isOn: $useKilogram){
                     Text("体重以 kg 为单位")
